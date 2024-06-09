@@ -38,7 +38,7 @@ function generateAd(){
             document.getElementById('countdownElement').remove();
             let adImage = createCustomElement('img', 'ads-img');
             adImage.className = 'img-fluid p-2';
-            adImage.src = '../img/ads/ad-banner1.png';
+            adImage.src = './img/ads/ad-banner1.png';
             contImage.appendChild(adImage);
 
             let closeBtn = createCustomElement('button', 'closeBtn');
