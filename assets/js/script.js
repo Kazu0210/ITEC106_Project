@@ -20,6 +20,7 @@ menuButton.addEventListener('click', function(){
     }
 });
 
+// gagawa ng custom element with id and class
 function createCustomElement(element, id, elementClass) {
     let addCont = document.createElement(element);
     addCont.id = id;
@@ -28,6 +29,8 @@ function createCustomElement(element, id, elementClass) {
 }
 
 function generateAd(){
+
+    // countdown 
     function countdown() {
         if (countdownNumber > 0) {
             countdownNumber--;
@@ -35,15 +38,19 @@ function generateAd(){
             setTimeout(countdown, 1000);
             console.log(countdownNumber);
         } else {
-            document.getElementById('countdownElement').remove();
-            let adImage = createCustomElement('img', 'ads-img');
-            adImage.className = 'img-fluid p-2';
-            adImage.src = 'assets/img/ads/ad-banner1.png';
-            contImage.appendChild(adImage);
+            const min = 1;
+            const max = 4;
+            const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            document.getElementById('countdownElement').remove(); // countdown text
+            let adImage = createCustomElement('img', 'ads-img'); // gawa ng <img> element
+            adImage.className = 'img-fluid p-2'; // add class sa <img> element
+            adImage.src = '../assets/img/ads/ad-banner'+randomNumber+'.png'; // add source sa <img> element
+            contImage.appendChild(adImage); // ilagay yung <img> sa loob ng container or <div>
 
             let closeBtn = createCustomElement('button', 'closeBtn');
             closeBtn.innerHTML = "Close Advertisement";
-            closeBtn.className = 'position-absolute end-0 bottom-0 z-1';
+            closeBtn.className = 'position-absolute end-0 bottom-0';
             closeBtn.id = 'close-btn';
             contImage.appendChild(closeBtn);
 
@@ -68,3 +75,17 @@ function generateAd(){
     countdown();
 }
 generateAd();
+
+const anchors = document.querySelectorAll('a[href^="#"]');
+
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', event => {
+    event.preventDefault();
+    const href = anchor.getAttribute('href');
+    const section = document.querySelector(href);
+
+    section.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});

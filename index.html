@@ -28,20 +28,20 @@
 
             <div class="d-none d-sm-block container-fluid " style="background-color: #6C4E2F; height: auto;">
                 <ul class="list-group d-flex justify-content-center align-items-center flex-row p-2" style="list-style-type: none;">
-                    <li class="mx-2"><a href="" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">Home</a></li>
-                    <li class="mx-2"><a href="" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">About Us</a></li>
-                    <li class="mx-2"><a href="" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">Menu</a></li>
-                    <li class="mx-2"><a href="" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">Contact Us</a></li>
+                    <li class="mx-2"><a href="#cont-header" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">Home</a></li>
+                    <li class="mx-2"><a href="#cont-aboutUs" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">About Us</a></li>
+                    <li class="mx-2"><a href="#menu-container" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">Menu</a></li>
+                    <li class="mx-2"><a href="#cont-contactUs" class="text-light link-underline link-underline-opacity-0" style="font-size: .8rem;">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
 
         <aside id="cont-dynamicMenu" class="container-fluid position-absolute end-0 p-0 m-0 d-flex justify-content-center align-items-center z-1    " style="width: 0%; background-color: rgba(0, 0, 0, .7); height: 90lvh;">
             <ul id="menu-items" class="d-none list-group link-underline-opacity-0 p-0 m-0">
-                <li class="list-group-item text-center p-1"><a href="" class="link-underline link-underline-opacity-0 text-light fw-medium">Home</a></li>
-                <li class="list-group-item text-center p-1"><a href="" class="link-underline link-underline-opacity-0 text-light fw-medium">About Us</a></li>
-                <li class="list-group-item text-center p-1"><a href="" class="link-underline link-underline-opacity-0 text-light fw-medium">Menu</a></li>
-                <li class="list-group-item text-center p-1"><a href="" class="link-underline link-underline-opacity-0 text-light fw-medium">Contact Us</a></li>
+                <li class="list-group-item text-center p-1"><a href="#cont-header" class="link-underline link-underline-opacity-0 text-light fw-medium">Home</a></li>
+                <li class="list-group-item text-center p-1"><a href="#cont-aboutUs" class="link-underline link-underline-opacity-0 text-light fw-medium">About Us</a></li>
+                <li class="list-group-item text-center p-1"><a href="#menu-container" class="link-underline link-underline-opacity-0 text-light fw-medium">Menu</a></li>
+                <li class="list-group-item text-center p-1"><a href="#cont-contactUs" class="link-underline link-underline-opacity-0 text-light fw-medium">Contact Us</a></li>
             </ul>
         </aside>
 
@@ -49,7 +49,7 @@
             <button id="close-btn" class="position-absolute end-0 bottom-0 z-1">close advertisement</button>
             <img src="/assets/img/ads/ad-banner1.png" alt="advertisement" class="img-fluid p-2" style="width: auto;" id="ads-img">
         </section> -->
-        <section class="advertisement-cont container-fluid d-flex justify-content-center align-items-center position-relative" id="advertisement-cont">
+        <section class="advertisement-cont container-fluid d-flex justify-content-center align-items-center position-relative" id="advertisement-cont" style="background-color: #d1d1d1;">
             <div class="container-fluid d-flex justify-content-center align-items-center position-relative" id="cont-image">
                 <!-- <img src="/assets/img/ads/ad-banner1.png" alt="" class="img-fluid p-2" style="width: auto;" id="ads-img">  
                 <button id="close-btn" class="position-absolute end-0 bottom-0 z-1">close advertisement</button> -->
@@ -68,7 +68,7 @@
             </section>
         </header>
 
-        <article class="container-fluid position-relative p-0 m-0 overflow-hidden d-flex justify-content-center align-items-center flex-column" style="height: 70lvh; background-color: #F9F6F1;">
+        <article id="cont-aboutUs" class="container-fluid position-relative p-0 m-0 overflow-hidden d-flex justify-content-center align-items-center flex-column" style="height: 70lvh; background-color: #F9F6F1;">
             <figure class="container-fluid position-absolute p-0 m-0">
                 <img src="assets/img/blue pattern 2.jpg" alt="background image" id="img-aboutUs" class="img-fluid" style="mix-blend-mode: overlay;">
             </figure>
@@ -78,13 +78,13 @@
             <p class="position-relative text-center text-dark text-wrap" style="width: 80%; font-size: 1rem;">Welcome to Menu 4 You, where you can enjoy freshly brewed coffees, artisan breads, and delightful treats in a warm and inviting atmosphere. We use the finest ingredients and traditional methods to ensure every bite is flavorful and of high quality. Whether you're here for a quick coffee or a leisurely meal, your taste is our passion. Join us and let us make every moment special with our exceptional food and hospitality.</p>
         </article>
 
-        <section class="container-fluid m-0 p-0 position-relative overflow-hidden" style="height: auto; background-image: url('assets/img/Coffee\ Beans\ Background\ 2.jpg'); background-size: cover;">
+        <section id="menu-container" class="container-fluid m-0 p-0 position-relative overflow-hidden" style="height: auto; background-image: url('assets/img/Coffee\ Beans\ Background\ 2.jpg'); background-size: contain;">
             <h1 class="text-center py-5 text-light">OUR MENU</h1>
 
-            <article class="container-fluid" style="height: auto;">
+            <article class="container-fluid" style="height: auto;" id="menu">
                 <div class="row py-4">
                     <div class="col d-flex justify-content-center align-items-center">
-                        <img src="assets/img/products/hot coffee.png" alt="hot coffee image" class="img-fluid col-sm-9" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
+                        <img src="assets/img/products/hot coffee.png" alt="hot coffee image" id="menu-img" class="img-fluid col-sm-9" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
                     </div>
                     <div class="col d-sm-flex justify-content-center align-items-center flex-column">
                         <h2 class="text-light text-wrap fs-sm-1">HOT COFFEE</h2>
@@ -107,13 +107,13 @@
                         </ul>
                     </div>
                     <div class="col d-flex justify-content-center align-items-center">
-                        <img src="assets/img/products/Strawberry milk.png" alt="hot coffee image" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
+                        <img src="assets/img/products/Strawberry milk.png" alt="hot coffee image" id="menu-img" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
                     </div>
                 </div>
 
                 <div class="row py-4">
                     <div class="col d-flex justify-content-center align-items-center">
-                        <img src="assets/img/products/frappe.png" alt="hot coffee image" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
+                        <img src="assets/img/products/frappe.png" alt="hot coffee image" id="menu-img" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
                     </div>
                     <div class="col d-sm-flex justify-content-center align-items-center flex-column">
                         <h2 class="text-light text-wrap fs-sm-1">FRAPPE</h2>
@@ -139,13 +139,13 @@
                         </ul>
                     </div>
                     <div class="col d-flex justify-content-center align-items-center">
-                        <img src="assets/img/products/croffles.png" alt="hot coffee image" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
+                        <img src="assets/img/products/croffles.png" alt="hot coffee image" id="menu-img" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
                     </div>
                 </div>
 
                 <div class="row py-4">
                     <div class="col d-flex justify-content-center align-items-center">
-                        <img src="assets/img/products/vanilla ice cream.png" alt="hot coffee image" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
+                        <img src="assets/img/products/vanilla ice cream.png" alt="hot coffee image" id="menu-img" class="img-fluid col-sm-8" style="transform: rotate(345deg); filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));">
                     </div>
                     <div class="col d-sm-flex justify-content-center align-items-center flex-column">
                         <h2 class="text-light text-wrap fs-sm-1">ADD ONS</h2>
@@ -162,7 +162,7 @@
             </article>
         </section>
 
-        <section class="container-fluid m-0 p-0 d-flex justify-content-center align-items-center flex-column" style="height: auto; background-color: #F9F6F1;">
+        <section id="cont-contactUs" class="container-fluid m-0 p-0 d-flex justify-content-center align-items-center flex-column" style="height: auto; background-color: #F9F6F1;">
             <h1 class="text-center text-dark pt-5 pb-3">CONTACT US</h1>
             <p class="text-center text-dark px-4 px-sm-5" style="font-size: .8rem;">Get in Touch! Have a question, comment, or just want to say hello? Fill out the form below and we'll get back to you soon.</p>
 
@@ -179,7 +179,7 @@
             <div class="bg-white rounded-3 my-3 mb-5 overflow-hidden d-none d-sm-block" style="width: 90%; box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .1);">
                 <div class="row p-0 m-0">
                     <div class="col d-flex justify-content-center align-items-center" style="background-color: #6C4E2F;">
-                        <img src="assets/img/menu4you logo.png" alt="" class="img-fluid" style="width: 80%; filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .2));">
+                        <img src="assets/img/menu4you logo.png" alt="" id="img-contactUs" class="img-fluid" style="height: 80%; filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .2));">
                     </div>
                     <div class="col">
                         <form action="" method="post" class="bg-white p-4 rounded-3" style="width: 100%;">
@@ -228,10 +228,10 @@
                 <div class="col">
                     <h3 class="text-light fs-3 text-wrap text-responsive p-2 m-0">Links</h3>
                     <ul class="list-group ps-2 text-light rubik-light" style="list-style-type: none; font-size: .9rem;">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Menu</li>
-                        <li>Contact Us</li>
+                        <li><a href="#cont-header" class="text-light link-underline link-underline-opacity-0">Home</a></li>
+                        <li><a href="#cont-aboutUs" class="text-light link-underline link-underline-opacity-0">About Us</a></li>
+                        <li><a href="#menu-container" class="text-light link-underline link-underline-opacity-0">Menu</a></li>
+                        <li><a href="#cont-contactUs" class="text-light link-underline link-underline-opacity-0">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

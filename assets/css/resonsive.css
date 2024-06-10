@@ -1,3 +1,9 @@
+#menu-img:hover{
+    transform: rotate(355deg);
+    scale: 1.2;
+}
+
+
 @media screen and (max-width: 320px){
     .advertisement-cont{
         height: 15lvh;
@@ -37,6 +43,13 @@
         margin: 2px;
         background-color: #fff;
     }
+    
+    #menu-img{
+        transform: rotate(345deg);
+        filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));
+        width: auto;
+        height: 80%;
+    }
 }
 @media screen and (min-width: 425px){
     .advertisement-cont{
@@ -58,5 +71,84 @@
         padding: 2px 5px;
         margin: 2px;
         background-color: #fff;
+    }
+
+    #menu-img{
+        transform: rotate(345deg);
+        filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));
+        width: auto;
+        height: 80%;
+    }
+}
+@media screen and (min-width: 768px){
+    .advertisement-cont{
+        height: 20lvh;
+    }
+    #cont-image{
+        height: 100%;
+    }
+    #ads-img{
+        padding: 2rem;
+        height: 90%;
+        width: auto;
+    }
+    #close-btn{
+        width: auto;
+        font-size: .8rem;
+        border: 0;
+        border-radius: 5px;
+        padding: 2px 5px;
+        margin: 2px;
+        background-color: #fff;
+    }
+
+    #menu-img{
+        transform: rotate(345deg);
+        filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));
+        width: auto;
+        height: 60%;
+    }
+
+    #menu div h2{
+        font-size: 3rem;
+    }
+    #menu div li{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .advertisement-cont{
+        height: 20lvh;
+    }
+    #cont-image{
+        height: 100%;
+    }
+    #ads-img{
+        padding: 2rem;
+        height: 90%;
+        width: auto;
+    }
+    #close-btn{
+        width: auto;
+        font-size: .8rem;
+        border: 0;
+        border-radius: 5px;
+        padding: 2px 5px;
+        margin: 2px;
+        background-color: #fff;
+    }
+
+    #menu-img{
+        transform: rotate(345deg);
+        filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .7));
+        width: auto;
+        height: 60%;
+    }
+
+    #menu div h2{
+        font-size: 3rem;
+    }
+    #menu div li{
+        font-size: 1.5rem;
     }
 }
