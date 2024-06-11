@@ -45,7 +45,7 @@ function generateAd(){
             document.getElementById('countdownElement').remove(); // countdown text
             let adImage = createCustomElement('img', 'ads-img'); // gawa ng <img> element
             adImage.className = 'img-fluid p-2'; // add class sa <img> element
-            adImage.src = '../assets/img/ads/ad-banner'+randomNumber+'.png'; // add source sa <img> element
+            adImage.src = './assets/img/ads/ad-banner'+randomNumber+'.png'; // add source sa <img> element
             contImage.appendChild(adImage); // ilagay yung <img> sa loob ng container or <div>
 
             let closeBtn = createCustomElement('button', 'closeBtn');
